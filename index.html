@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/images/vite.svg" />
+
+    <title>Vite Bootstrap App</title>
+  </head>
+  <body>
+    <section class="navbar navbar-dark navbar-expand-lg sticky-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbar-SupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-outline-primary me-2" type="button" data-bs-toggle="modal" data-bs-target="#modal-connection">Se connecter</button>
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-inscription">S'inscrire</button>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="container-fluid mt-3">
+      <main class="col-12 mb-3">
+        <div class="container">
+          <!-- Portfolio -->
+          <section class="row justify-content-center mb-5">
+            <header class="col-12 text-center">
+              <h2 id="portfolio">Portfolio</h2>
+            </header>
+            <article class="col-12 col-md-6">
+              <div class="carousel slide" id="projectsCarousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button class="active" type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="rounded" src="/assets/images/pexels-fauxels-3183153.jpg" alt="A project image" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6>Interface administrateur</h6>
+                      <p>Une interface administrateur basée sur Bootstrap de Twitter.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="rounded" src="/assets/images/pexels-ivan-samkov-5428643.jpg" alt="A project image" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6>Projet effrayant d'Halloween</h6>
+                      <p>Et oui même en informatique on fête Halloween!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="rounded" src="/assets/images/pexels-ketut-subiyanto-4126743.jpg" alt="A project image" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6>Conception de Projet</h6>
+                      <p>Je conçois votre site de rêve.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+          </section>
+          <!-- About -->
+          <section class="row justify-content-center mb-5">
+            <header class="col-12 text-center">
+              <h2>A propos de moi</h2>
+            </header>
+            <article class="col-12 col-lg-3 mb-3 mb-md-0">
+              <div class="card">
+                <h5 class="card-header">Presentation:</h5>
+                <div class="card-body">
+                  <div class="container-fluid">
+                    <div class="row mb-3">
+                      <div class="col-3">
+                        <img class="rounded img-thumbnail avatar float-start" src="https://www.gravatar.com/avatar/edccfce4aa99b8e40512ecc28b51d5de" alt="Avatar de M. Vandernoot">
+                      </div>
+                      <div class="col-9 align-self-center">
+                        <h6 class="text-primary m-0">Mathieu Vandernoot</h6>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-12">
+                        <p class="card-text">Je suis un passioné de nouvelles technologies et plus recemment de developpement informatique.</p>
+                        <p class="card-text">Je suis actuellement en formation de développeur web/mobile PHP a <a href="https://www.adrar-formation.com">l'ADRAR</a>.</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-xxl-6">
+                        <ul class="card-text no-style">
+                          <li>
+                            <i class="bi bi-facebook"></i>
+                            <a href="htps://facebook.com/">Facebook</a>
+                          </li>
+                          <li>
+                            <i class="bi bi-instagram"></i>
+                            <a href="htps://instagram.com/">Instagram</a>
+                          </li>
+                          <li>
+                            <i class="bi bi-twitter"></i>
+                            <a href="htps://twitter.com/">Twitter</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-xxl-6">
+                        <ul class="card-text no-style">
+                          <li>
+                            <i class="bi bi-linkedin"></i>
+                            <a href="htps://linkedin.com/in/mathieu-vandernoot-0a2865b2/">LinkedIn</a>
+                          </li>
+                          <li>
+                            <i class="bi bi-github"></i>
+                            <a href="htps://github.com/vdndev">Github</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-12 col-lg-3 mb-3 mb-md-0">
+              <div class="card">
+                <h5 class="card-header">Etudes:</h5>
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      BTS Electronique
+                    </li>
+                    <li class="list-group-item">
+                      Bac Sti Electronique
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article class="col-12 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Competences:</h5>
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <a target="_blank" href="https://icons8.com/icon/20909/html-5" data-bs-toggle="tooltip" data-bs-title="HTML5">
+                        <img class="lang-logo" src="/assets/images/icons8-html-5.svg" alt="html 5 logo">
+                      </a>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <i class="bi bi-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <a target="_blank" href="https://icons8.com/icon/21278/css3" data-bs-toggle="tooltip" data-bs-title="CSS3">
+                        <img class="lang-logo" src="/assets/images/icons8-css3.svg" alt="css 3 logo">
+                      </a>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <i class="bi bi-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <a target="_blank" href="https://icons8.com/icon/108784/javascript" data-bs-toggle="tooltip" data-bs-title="Javascript">
+                        <img class="lang-logo" src="/assets/images/javascript.svg" alt="javascript logo">
+                      </a>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <a target="_blank" href="https://icons8.com/icon/fAMVO_fuoOuC/php-logo" data-bs-toggle="tooltip" data-bs-title="PHP">
+                        <img class="lang-logo" src="/assets/images/icons8-php-logo.svg" alt="php logo">
+                      </a>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <i class="bi bi-star"></i>
+                    </li>
+                    <li class="list-group-item">
+                      <a target="_blank" href="https://icons8.com/icon/YUKvLGE4zROg/diagram" data-bs-toggle="tooltip" data-bs-title="UML">
+                        <img class="lang-logo" src="/assets/images/icons8-diagram-64.png" alt="uml logo">
+                      </a>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <i class="bi bi-star"></i>
+                    </li>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- Contact -->
+          <section class="row">
+            <header class="col-12 text-center">
+              <h2 id="contact">Me contacter</h2>
+            </header>
+            <article class="col-12">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-4">
+                    <form class="container" action="contact.php" method="post">
+                      <div class="row mb-3">
+                        <label class="col-12 col-lg-2 col-form-label" for="email">Email</label>
+                        <div class="col-12 col-lg-10">
+                          <input class="form-control" type="email" name="email" id="email">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="row justify-content-between">
+                        <div class="col-12 col-xl-4">
+                          <input class="btn btn-danger form-control" type="reset" value="Effacer">
+                        </div>
+                        <div class="col-12 col-xl-4">
+                          <input class="btn btn-primary form-control" type="submit" value="Envoyer">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="row text-bg-dark">
+        <div class="col-12">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-4">
+                <p class="mb-0 p-md-1">Copyright &copy; M. Vandernoot 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <section class="modal fade" id="modal-inscription" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <form class="modal-content" action="inscription.php" method="post">
+          <div class="modal-header">
+            <h5 class="modal-title">Inscription</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" arial-label="Fermer"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-md-3">
+                    <label class="form-label" for="ins-lastname">Nom:</label>
+                    <input class="form-control" type="text" name="ins-lastname" id="ins-lastname">
+                  </div>
+                  <div class="mb-md-3">
+                    <label class="form-label" for="con-firstname">Prénom:</label>
+                    <input class="form-control" type="text" name="ins-firstname" id="ins-firstname">
+                  </div>
+                  <div class="mb-md-3">
+                    <label class="form-label" for="ins-pseudo">Pseudonyme:</label>
+                    <input class="form-control" type="text" name="ins-pseudo" id="ins-pseudo">
+                  </div>
+                  <div class="mb-md-3">
+                    <label class="form-label" for="ins-email">Email:</label>
+                    <input class="form-control" type="email" name="ins-email" id="ins-email">
+                  </div>
+                  <div class="mb-md-3">
+                    <label class="form-label" for="ins-phone">Telephone:</label>
+                    <input class="form-control" type="tel" name="ins-phone" id="ins-phone">
+                  </div>
+                  <div class="mb-md-3">
+                    <label class="form-label" for="ins-passwd1">Mot de passe:</label>
+                    <input class="form-control" type="password" name="ins-passwd1" id="ins-passwd1">
+                  </div>
+                  <div class="mb-md-3">
+                    <label class="form-label" for="ins-passwd2">Entrez de nouveau votre mot de passe:</label>
+                    <input class="form-control" type="password" name="ins-passwd2" id="ins-passwd2">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <input class="btn btn-danger" type="reset" value="Effacer">
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fermer</button>
+            <button class="btn btn-primary" type="submit">S'inscrire</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="modal fade" id="modal-connection" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <form class="modal-content" action="connection.php" method="post">
+          <div class="modal-header">
+            <h5 class="modal-title">Connection</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" arial-label="Fermer"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <label class="form-label" for="con-email">Email:</label>
+                  <input class="form-control" type="email" name="con-email" id="con-email">
+                  <label class="form-label" for="con-passwd">Mot de passe:</label>
+                  <input class="form-control" type="password" name="con-passwd" id="con-passwd">
+                  <p>Mot de passe oublié: cliquez <a href="#">ici</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <input class="btn btn-danger" type="reset" value="Effacer">
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fermer</button>
+            <button class="btn btn-primary" type="submit">Se Connecter</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

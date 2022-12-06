@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "description": "Un projet de test de bootstrap pour la formation de developpeur a distance web/mobile PHP de l'ADRAR",
+  "author": "Mathieu Vandernoot <developpement.vandernoot@gmail.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/vdndev/bootstrap-portfolio#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdndev/bootstrap-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vdndev/bootstrap-portfolio/issues"
+  },
+  "type": "module",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1",
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2"
+  }
+}
