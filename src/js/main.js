@@ -1,4 +1,4 @@
-import '../styles/style.scss'
+import '../scss/main.scss'
 import * as bootstrap from "bootstrap";
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');

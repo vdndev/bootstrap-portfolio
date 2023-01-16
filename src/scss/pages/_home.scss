@@ -1,0 +1,25 @@
+.card {
+  box-shadow: $card-box-shadow;
+  color: $card-color;
+}
+
+.bi {
+  height: 1em;
+  width: 1em;
+}
+
+.avatar {
+  border-radius: 8px;
+  width: 96px;
+}
+
+.lang-logo {
+  height: 2em;
+  width: 2em;
+}
+
+.no-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
